@@ -1,0 +1,46 @@
+ Console.WriteLine("Have the green and red facing you and start vertically. Please pick a color: green, red, blue, or pink");
+            string userInput;
+            string blue, pink, green, red;
+            string one, two, three, four, five, six, seven, eight;
+            pink = "pink";
+            blue = "blue";
+            green = "green";
+            red = "red";
+            one = "one";
+            two = "two";
+            three = "three";
+            four = "four";
+            five = "five";
+            six = "six";
+            seven = "seven";
+            eight = "eight";
+            userInput = Console.ReadLine();
+
+            if (userInput == green || userInput == red)
+                Console.WriteLine("Please pick a number " + one + ", " + four + ", " + five + ", " + eight);
+            else if (userInput == blue || userInput == pink)
+                Console.WriteLine("Please pick a number " + two + ", " + three + ", " + six + ", " + seven);
+            userInput = Console.ReadLine();
+            if (userInput == one || userInput == two || userInput == five || userInput == six)
+                Console.WriteLine("Please choose a number " + two + ", " + three + ", " + six + ", " + seven);
+            else if (userInput == three || userInput == four || userInput == seven || userInput == eight)
+                Console.WriteLine("Please choose a number " + one + ", " + four + ", " + five + ", " + eight);
+            userInput = Console.ReadLine();
+ 
+            if (userInput == one)
+                Console.WriteLine("You will get a free ticket to a sports game.");
+            if (userInput == two)
+                Console.WriteLine("You will get free food.");
+            if (userInput == three)
+                Console.WriteLine("You will have grandchildren.");
+            if (userInput == four)
+                Console.WriteLine("You will have a long life");
+            if (userInput == five)
+                Console.WriteLine("You will win the lottery.");
+            if (userInput == six)
+                Console.WriteLine("You will never be alone.");
+            if (userInput == seven)
+                Console.WriteLine("You will be rich.");
+            if (userInput == eight)
+                Console.WriteLine("You will get straight A's.");
+            Console.ReadKey();
